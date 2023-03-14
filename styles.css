@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(./Resources/images.jpg);
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+}
+
+.nombre {
+    margin-right: 20px;
+    color:rgb(184, 17, 100);
+    font-weight: 700;
+    box-shadow: 2px 2px 4px;
+    font-size: 20px;
+    padding: 0 80px;
+
+}
+
+.menu {
+    background-image: url(./Resources/images.jpg);
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    height:75px;
+    width:100vw;
+    border-bottom: 1px solid rgba(184, 17, 100, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu_items {
+    display: flex;
+    margin-right: 20px;
+} 
+
+.menu_items li {
+    margin:0 5px;
+} 
+
+.menu_items a.activo {
+    background: rgb(184, 17, 100);
+    color:white;
+}
+
+.menu_items li a {
+    color:rgb(184, 17, 100);
+    font-weight: 700;
+    display: block;
+    font-size: 18px;
+    padding: 7px 13px;
+}
+
+.menu_items li a:hover {
+    background: rgb(184, 17, 100);
+    color:white;
+    transition: .3;
+}
+
+.btn_menu {
+    margin-right:20px;
+    font-size:30px;
+    color:blanchedalmond;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width:952px) {
+    .nombre {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+
+    .menu_items li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:858px) {
+
+    .menu {
+        height:65px;
+    }
+
+    .btn_menu{
+        display: inline-flex;
+    }
+
+    .menu_items {
+        position:fixed;
+        width: 100vw;
+        height:100%;
+        background: rgba(184, 17, 100, 0.86);
+        top: -200vh;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .menu_items li {
+        margin: 50px;
+        line-height: 30px;
+    }
+
+    .menu_items li:hover {
+        background: none;
+
+    }
+
+    .menu_items li a {
+        font-size: 20px;
+        color:antiquewhite;
+    }
+    
+    .menu_items li a:hover {
+        background: none;
+        color:black;
+        font-weight: 700;
+
+    }
+
+    .nombre {
+        font-size: 20px;
+        padding-left: 35px;
+    }
+
+    .info {
+        flex-direction: column;
+        flex-wrap: wrap;
+        }
+
+    .imagen {
+        width: auto;
+        height: auto;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    }
+
+
+    ul.mostrar {
+        top:65px;
+    }
+
+
+@media screen and (max-width:858px) and (orientation:landscape) {
+    .menu_items li {
+        margin: 5px 0 0 0;
+    }
+
+    .menu_items {
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
+
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 50%;
+    padding: 15px 5px;
+    color:rgb(6, 13, 19);
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    border-bottom: 1px solid rgba(184, 17, 100, 0.5);
+    opacity: 1;
+    background-size: cover;
+    background-position: center center; 
+    z-index: 100;
+}
+
+.titulos_de_presentacion {
+    text-align: center;
+    color: rgb(184, 17, 100);
+    font-weight: 700;
+    text-shadow: 2px 2px  rgb(109, 101, 105);
+}
+
+.sobre_mi {
+    text-decoration: underline;
+    color: rgb(184, 17, 100);
+    margin-bottom: 10px;
+}
+
+.texto_de_presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 50%;
+    font-size: 16px;
+}
+
+span {
+    color: black;
+    text-shadow: 1px 1px 2px rgb(46, 13, 29);
+}
+
+.imagen {
+    margin-left: 70px;
+    margin-top: 10px;
+    height: 280px;
+    border: 2px solid rgb(184, 17, 100);
+    border-radius: 100%;
+}
+
+.descarga_cv {
+    display: flex;
+    justify-content: center; 
+}
+
+.download_cv {
+    margin-top: 15px;
+    font-size: 16px;
+    width: 150px;
+    height: 35px;
+    padding: 5px 5px;
+    background-color: rgb(184, 17, 100);
+    color:white;
+    font-weight: 900;
+    border-radius: 5px;
+    cursor:pointer;
+    box-shadow: 1px 3px 11px -5px rgba(73, 6, 40, 0.829);
+}
+
+.download_cv:hover {
+    background-color: rgb(128, 50, 111);
+    color:white;
+    transition: 1s;
+    box-shadow: none;
+}
+
+.habilidades {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    color:black;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.rounded {
+    width: 130px;
+    height: 130px;
+    border: 1px solid rgba(184, 17, 100,0.5);
+    border-radius: 15px;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+    background: rgba (0,0,0,0.8);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border:1px solid rgba(184, 17, 100, 0.5);
+}
+
+textarea {
+    min-height: 100px;
+    max-width: 200px;
+    max-width: 100%;
+}
+
+.mis_proyectos {
+    margin-bottom: 20px;
+}
+
+.proyectos {
+    color: black;
+    font-size: 20px;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto {
+    color:black;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contactame {
+    display: flex;
+    justify-content: center;
+}
+
+.volver_arriba {
+    display: flex;
+    justify-content: center;
+    color: rgb(184, 17, 100);
+    margin-bottom: 10px;
+    
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(184, 17, 100, 0.5);
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    /* margin:0 auto;
+    max-width: 960px; */
+}
+
+.p_footer {
+    color: rgb(184, 17, 100);
+    font-size: 15px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-left: 10px;
+}
+
+footer a {
+    color: rgba(184, 17, 100, 0.781);
+    font-size: 20px;
+}
